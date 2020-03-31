@@ -18,7 +18,7 @@ apt install cmake
 **RUN BY ./snake form the build directory after compliering**  
 Use  ↑←↓→ to control snake  
 
-Interface by curses
+Interface by curses  
 Animation by halfdelay: https://linux.die.net/man/3/halfdelay  
 Snake body: array from Colllection-C: https://github.com/srdja/Collections-C.git
 
