@@ -95,7 +95,7 @@ int main()
         
         clear();
         //update game score
-        mvprintw(0, 0, "cur score:%d", get_cur_score());
+        mvprintw(0, 0, "current score:%d", get_cur_score());
         mvprintw(0, 20, "highest score:%d", get_higest_score());
 
         //draw wall
@@ -103,13 +103,13 @@ int main()
             int temp = 0;
             for(temp=1; temp< map_heigth + 3; ++temp) //vertical
             {
-                mvprintw(temp, 0, "o");
-                mvprintw(temp, map_width+1, "o");
+                mvprintw(temp, 0, "*");
+                mvprintw(temp, map_width+1, "*");
             }
             for(temp=1; temp< map_width + 1; ++temp)  //horizental
             {
-                mvprintw(1, temp, "o");
-                mvprintw(12, temp, "o");
+                mvprintw(1, temp, "*");
+                mvprintw(12, temp, "*");
             }
         }
         //draw food
@@ -135,15 +135,15 @@ int main()
     clear();
     if(chin == 'q')
     {
-        mvprintw(10, 5, "you quit game");
+        mvprintw(10, 5, "Quit");
     }
     else if(is_dead())
     {
-        mvprintw(10, 5, "you lose game");
+        mvprintw(10, 5, "Nice try~");
     }
     else if(is_win())
     {
-        mvprintw(10, 5, "you win!");
+        mvprintw(10, 5, "Win!");
     }
     //mvprintw(0,0, "game over");
 

@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define map_width 10
+#define map_width 40 
 #define map_heigth 10
 
 #define food_tag "F"

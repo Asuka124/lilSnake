@@ -20,6 +20,11 @@ Use  ↑←↓→ to control snake
 
 Interface by curses  
 Animation by halfdelay: https://linux.die.net/man/3/halfdelay  
-Snake body: array from Colllection-C: https://github.com/srdja/Collections-C.git
+Snake body: array from Colllection-C: https://github.com/srdja/Collections-C.git  
 
+
+Issues waiting to fix:  
+1. draw the wall
+2. more cute snake 🐍 and food ⭐
+3. add obstacles 🌵
 
