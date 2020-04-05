@@ -24,7 +24,7 @@ Snake body: array from Colllection-C: https://github.com/srdja/Collections-C.git
 
 
 Issues waiting to fix:    
-1. draw the wall: vertical space is wider  
+1. ~~draw the wall: vertical space is wider~~  
 2. more cute snake 🐍 and food ⭐  
 3. add obstacles 🌵  
 4. address of initial appearance is ramdom, so sometimes snake born at the wall

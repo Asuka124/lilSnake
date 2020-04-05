@@ -103,13 +103,13 @@ int main()
             int temp = 0;
             for(temp=1; temp< map_heigth + 3; ++temp) //vertical
             {
-                mvprintw(temp, 0, "O");
-                mvprintw(temp, 2*(map_width+1), "O");
+                mvprintw(temp, 0, "*");
+                mvprintw(temp, 2*(map_width+1), "*");
             }
             for(temp=1; temp< (map_width + 1)*2; ++temp)  //horizental
             {
-                mvprintw(1, temp, "O");
-                mvprintw(map_heigth+2, temp, "O");
+                mvprintw(1, temp, "*");
+                mvprintw(map_heigth+2, temp, "*");
             }
         }
         //draw food
