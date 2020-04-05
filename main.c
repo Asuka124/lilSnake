@@ -95,7 +95,7 @@ int main()
         
         clear();
         //update game score
-        mvprintw(0, 0, "current score:%d", get_cur_score());
+        mvprintw(0, 0, "cur score:%d", get_cur_score());
         mvprintw(0, 20, "highest score:%d", get_higest_score());
 
         //draw wall
@@ -103,18 +103,18 @@ int main()
             int temp = 0;
             for(temp=1; temp< map_heigth + 3; ++temp) //vertical
             {
-                mvprintw(temp, 0, "*");
-                mvprintw(temp, map_width+1, "*");
+                mvprintw(temp, 0, "O");
+                mvprintw(temp, 2*(map_width+1), "O");
             }
-            for(temp=1; temp< map_width + 1; ++temp)  //horizental
+            for(temp=1; temp< (map_width + 1)*2; ++temp)  //horizental
             {
-                mvprintw(1, temp, "*");
-                mvprintw(12, temp, "*");
+                mvprintw(1, temp, "O");
+                mvprintw(map_heigth+2, temp, "O");
             }
         }
         //draw food
         FoodElement* food = get_current_food();
-        mvprintw(food->pos.row+row_start, food->pos.col+col_start, food_tag);
+        mvprintw(food->pos.row+row_start, (food->pos.col+col_start)*2, food_tag);
 
         //draw snake
         {
@@ -125,7 +125,7 @@ int main()
             while (array_iter_next(&ai, &next) != CC_ITER_END) 
             {
                 SnakeElement* ccc = (SnakeElement*)next;
-                mvprintw(ccc->pos.row+row_start, ccc->pos.col+col_start, 
+                mvprintw(ccc->pos.row+row_start, 2*(ccc->pos.col+col_start), 
                     snake_tag);
             }
         }
@@ -135,15 +135,15 @@ int main()
     clear();
     if(chin == 'q')
     {
-        mvprintw(10, 5, "Quit");
+        mvprintw(10, 5, "you quit game");
     }
     else if(is_dead())
     {
-        mvprintw(10, 5, "Nice try~");
+        mvprintw(10, 5, "you lose game");
     }
     else if(is_win())
     {
-        mvprintw(10, 5, "Win!");
+        mvprintw(10, 5, "you win!");
     }
     //mvprintw(0,0, "game over");
 

@@ -3,11 +3,11 @@
 
 #include <stdbool.h>
 
-#define map_width 40 
-#define map_heigth 10
+#define map_width 20
+#define map_heigth 20
 
-#define food_tag "F"
-#define snake_tag "S" 
+#define food_tag "FF"
+#define snake_tag "SS" 
 
 #define row_start 2
 #define col_start 1
